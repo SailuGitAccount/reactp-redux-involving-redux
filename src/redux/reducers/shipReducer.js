@@ -1,5 +1,5 @@
-import { createReducer } from "@reduxjs/toolkit";
-import { addShip, removeShip } from "../actions/shipAction";
+import { createReducer } from '@reduxjs/toolkit';
+import { addShip, removeShip } from '../actions/shipAction';
 
 const initialState = [];
 

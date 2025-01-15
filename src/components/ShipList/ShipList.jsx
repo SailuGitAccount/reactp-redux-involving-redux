@@ -3,14 +3,14 @@ import { useSelector, useDispatch } from "react-redux";
 import { removeShip } from "../../redux/actions/shipAction";
 
 const ShipList = () => {
-  const ships = useSelector((state) => state.ships);
+  const ships = useSelector((state) => {console.log("state",state);return state.ships});
   const dispatch = useDispatch();
 
   const handleRemoveShip = (ship) => {
     // Logic to remove a ship
     dispatch(removeShip(ship));
   };
-
+console.log("ships",ships);
   return (
     <div>
       <ul>
